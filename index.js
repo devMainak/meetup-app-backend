@@ -67,7 +67,33 @@ app.get("/", async (req, res) => {
     }
 })
 
-// Functi
+// Function to read meetup data by id
+const readMeetUpById = async (meetUpId) => {
+  try {
+    const meetUpBtId = await MeetUp.findById(meetUpId)
+    return meetUpBtId
+  } catch (error) {
+    throw error
+  }
+}
+
+// GET method on "/meetups/:meetUpId" to read a meetUp data by Id
+app.get("/meetups/:meetUpId", async (req, res) => {
+  try {
+    const meetUpById = await readMeetUpById(req.params.meetUpId)
+    if (!meetUpById) {
+      res.status(400)
+      .json({error: "Failed to fetch meetup details."})
+    } else {
+      res.status(200)
+      .send(meetUpById)
+    }
+  } catch(error) {
+    console.error(error)
+    res.status(500)
+    .json({error: "Internal Server Error."})
+  }
+})
 
 // Network port declarations
 const PORT = 3000

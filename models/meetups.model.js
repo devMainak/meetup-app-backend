@@ -44,13 +44,14 @@ const newMeetup = new mongoose.Schema({
   },
   eventMode: {
     type: String,
-    enum: ["Online", "Offline"],
+    enum: ["Online", "Offline", "Both"],
+    default: "Both",
     required: true
   },
   location: {
     type: String
   },
-  entryFees: {
+  entryFees: {  
     type: Number
   },
   coverImage: {
