@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const {Meetup} = require('./models/meetups.model')
+const {MeetUp} = require('./models/meetups.model')
 const initializeDatabase  = require('./db/db.connection')
 
 // JSON parsing middleware implemented
@@ -9,10 +9,65 @@ app.use(express.json())
 // Initial connection to DB
 initializeDatabase()
 
+// Function to save a meetup to DB
+const saveMeetUp = async (meetUpData) => {
+  try {
+    const meetUpToSave = new MeetUp(meetUpData)
+    const savedMeetUp = await meetUpToSave.save()
+    return savedMeetUp
+  } catch(error) {
+    throw error
+  }
+}
 
-app.get("/", (req, res) => {
-  res.send("Hello Web!")
+// POST method on "/meetup route to save meetup data in Database"
+app.post("/meetups", async (req, res) => {
+  try {
+    const savedMeetUp = await saveMeetUp(req.body)
+    if (!savedMeetUp) {
+      res.status(400)
+      .json({error: "Failed to save meetup data."})
+    } else {
+      res.status(201)
+      .json({message: "MeetUp added successfully."})
+    }
+  } catch (error) {
+    console.error(error)
+    res.status(500)
+    .json({error: "Internal Server Error."})
+  }
 })
+
+// Function to get all the meetups
+const readAllMeetUps = async () => {
+  try {
+    const meetUps = await MeetUp.find()
+    return meetUps
+  } catch (error) {
+    throw error
+  }
+}
+
+// GET method on "/" route to get all the meetups
+app.get("/", async (req, res) => {
+  try {
+    const allMeetUps = await readAllMeetUps()
+    if (allMeetUps.length != 0)
+    {
+      res.status(200)
+      .send(allMeetUps)
+    } else {
+      res.status(400)
+      .json({error: "Failed to fetch meetups"})
+    }
+  } catch (error) {
+    console.error(error)
+    res.status(500)
+    .json({error: "Internal Server Error."})
+    }
+})
+
+// Functi
 
 // Network port declarations
 const PORT = 3000

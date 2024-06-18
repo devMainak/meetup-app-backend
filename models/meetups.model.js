@@ -51,7 +51,7 @@ const newMeetup = new mongoose.Schema({
     type: String
   },
   entryFees: {
-    type: String
+    type: Number
   },
   coverImage: {
     type: String,
@@ -59,7 +59,10 @@ const newMeetup = new mongoose.Schema({
   },
   eventTags:[{
     type: String
-  }]
+  }],
+  website: {
+    type: String,
+  }
 })
 
 // Model for those Schemas
