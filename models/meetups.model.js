@@ -1,11 +1,13 @@
 const mongoose = require('mongoose')
 
+// Schema for speakers
 const newSpeaker = new mongoose.Schema({
   name: String,
   position: String,
   profileImage: String
 })
 
+// Schema for Meetups data
 const newMeetup = new mongoose.Schema({
   title: {
     type: String,
@@ -60,7 +62,9 @@ const newMeetup = new mongoose.Schema({
   }]
 })
 
+// Model for those Schemas
 const Speaker = mongoose.model("Speakers", newSpeaker)
-const MeetUp = mongoose.model("Meetups", MeetUp)
+const MeetUp = mongoose.model("Meetups", newMeetup)
 
+// exporting models
 module.exports = {MeetUp, Speaker}
