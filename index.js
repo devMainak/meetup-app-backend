@@ -49,7 +49,7 @@ const readAllMeetUps = async () => {
 }
 
 // GET method on "/" route to get all the meetups
-app.get("/", async (req, res) => {
+app.get("/meetups", async (req, res) => {
   try {
     const allMeetUps = await readAllMeetUps()
     if (allMeetUps.length != 0)
