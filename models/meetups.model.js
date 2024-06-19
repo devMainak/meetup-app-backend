@@ -52,7 +52,8 @@ const newMeetup = new mongoose.Schema({
     type: String
   },
   entryFees: {  
-    type: Number
+    type: Number,
+    default: 0
   },
   coverImage: {
     type: String,

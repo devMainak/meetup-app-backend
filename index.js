@@ -95,6 +95,36 @@ app.get("/meetups/:meetUpId", async (req, res) => {
   }
 })
 
+// Function to update data of meetup by Id
+const updateMeetUpDataById = async (meetUpId, dataToUpdate) => {
+  try {
+   const updatedMeetUp = await MeetUp.findByIdAndUpdate(meetUpId, dataToUpdate, {new: true})
+    console.log(updatedMeetUp)
+    return updatedMeetUp
+  } catch (error) {
+    throw error
+  }
+}
+
+// POST method on /meetups/:meetUpId to update data by id of meetup
+app.post("/meetups/:meetUpId", async (req, res) => {
+  try {
+    const updatedMeetUp = await updateMeetUpDataById(req.params.id, req.body)
+    if (!updatedMeetUp) {
+      res.status(400)
+      .json({error: "Meetup not found"})
+    } else {
+      res.status(201)
+      .json({message: "Meetup updated successfully", updatedMeetUp: updatedMeetUp})
+    }
+  } catch(error) {
+    console.error(error)
+    res.status(500)
+    .json({error: "Internal Server Error."})
+  }
+})
+
+
 // Network port declarations
 const PORT = 3000
 // Listening to network ports form HTTP requests

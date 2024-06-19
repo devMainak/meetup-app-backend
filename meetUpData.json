@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Understanding The Linux Kernel",
+    "host": "Linux Conf.",
+   "speakers": [
+      {"name": "Linus Torvalds", "position": "Creator - Linux Kernel", "profileImage": "https://media.newyorker.com/photos/5ba177da9eb2f7420aadeb98/1:1/w_1003,h_1003,c_limit/Cohen-Linus-Torvalds.jpg"}
+   ],
+   "eventDetails": "Linus Benedict Torvalds (/ˈliːnəs ˈtɔːrvɔːldz/ LEE-nəs TOR-vawldz,[2] Finland Swedish: [ˈliːnʉs ˈtuːrvɑlds] ⓘ; born 28 December 1969) is a Finnish-American software engineer who is the creator and lead developer of the Linux kernel. He also created the distributed version control system Git. The Linux kernel is a free and open-source, UNIX-like kernel that is used in many computer systems worldwide. The kernel was created by Linus Torvalds in 1991 and soon after was adopted as the kernel for the GNU operating system which was created to be a free replacement for Unix. Join the conference to hear from the master to gain insight on the linux kernel.",
+    "startingTime": "3:00 PM",
+    "closingTime": "7:00 PM",
+    "eventDate": "25/07/2024",
+    "eventMode": "Offline",
+    "location": "45 Quincy St, Cambridge, MA 02138, United States",
+    "entryFees": 25,
+    "dressCode": "Casual",
+    "coverImage": "https://i.ytimg.com/vi/o8NPllzkFhE/maxresdefault.jpg",
+    "eventTags": ["Tech", "Linux", "Linus Torvalds"],
+    "website": "https://www.kernel.org/"
+  },
+  {
+    "title": "Capture The Flag",
+    "host": "fsociety",
+   "speakers": [
+      {"name": "Eliott Alderson", "position": "Cyber-Scurity Engineer", "profileImage": "https://static.wikia.nocookie.net/mrrobot/images/4/45/Elliot_Alderson_Icon.jpg/revision/latest/scale-to-width-down/250?cb=20240329005909"},
+     {"name": "Darlene Alderson", "position": "Malware Analyst", "profileImage": "https://static.wikia.nocookie.net/mrrobot/images/e/e4/Season_4_Darlene.jpg/revision/latest/scale-to-width-down/250?cb=20190928213622"}
+   ],
+   "eventDetails": "Event in which participants, either individually or as part of a team, are challenged to find and exploit vulnerabilities in a system to capture a 'flag' or piece of information. fsociety is the name of a cyber security firm based in Coney Island, New York, led by Mr.Eliott Alderson. Participate to win cash prizes, swags and chance to do a internship at Fsociety.",
+    "startingTime": "8:00 PM",
+    "closingTime": "10:00 PM",
+    "eventDate": "06/07/2024",
+    "eventMode": "Online",
+    "entryFees": 49,
+    "coverImage": "https://static.javatpoint.com/tutorial/kali-linux/images/fsociety-tool-in-kali-linux4.png",
+    "eventTags": ["CTF", "Cyber Security", "Hacking"],
+    "website": "https://fsociety.dev/"
+  },
+  {
+    "title": "Manga Con",
+    "host": "Japan Consulate (India)",
+     "speakers": [
+        {"name": "Naoki Urasawa", "position": "Manga Artist & Musician", "profileImage": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbwb53Qcp0Ofi-jPhqyhPpgeF6zeORdwbjbxdFyJjXBD3vbqgc"},
+       {"name": "Makoto Shinkai", "position": "Japanese filmmaker and novelist", "profileImage": "https://features.japantimes.co.jp/wp-content/uploads/2019/07/Martin-Holtkamp_190713_164642_073.jpg"}
+     ],
+     "eventDetails": "Come Along to celebrate the founding 25th anniversary of Japan Consulate (Kolkata, India) with your love for japanses art and culture. The Manga Con will be taking place on 3rd August, 2024 at the Indian Council For Cultural Relations, Kolkata. The presence of global artists like Naoki Urasawa and Makoto Shinkai will set your eyes to glitter. Take a part in a meet and greet program and have a chance to grab your copy of a signed 20th Century Boys manga from Mr.Urasawa himself. Many other events are waiting at the venue. The gates will be open from 11:00 AM to 7:00 PM. Hurry up and registor yourself in given website tickts are limited and free of cost. ",
+      "startingTime": "11:00 AM",
+      "closingTime": "7:00 PM",
+      "eventDate": "03/08/2024",
+      "location" : "ICCR, 9A, Ho Chi Minh Sarani Rd, Kankaria Estates, Park Street area, Kolkata, West Bengal 700071",
+      "eventMode": "Offline",
+      "coverImage": "https://facts.net/wp-content/uploads/2023/07/13-facts-about-jump-festa-anime-and-manga-expo-1690659643.jpg",
+      "eventTags": ["Japan", "Arts & Culture", "Manga"],
+      "website": "https://jpconsulate.gov/india/kolkata/mangacon"
+  },
+  {
+    "title": "Discussion on International Relations & Policies",
+      "host": "Ministry of External Affairs (Govt. of India)",
+     "speakers": [
+        {"name": "Dr. S. Jaisankar", "position": "Cabinet Minister (MEA)", "profileImage": "https://th-i.thgim.com/public/migration_catalog/article10486538.ece/alternates/FREE_1200/THAVD_JAISHANKAR"},
+       {"name": "Aditya Mangal", "position": "Indian Foreign Service", "profileImage": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/03/20/898734-raveesh-kumar.jpg"}
+     ],
+     "eventDetails": "The International Relations Conference is an annual event organized by the Ministry of External Affairs under the Govt. of India. It provides students the opportunity to listen to diverse scholarly and diplomatic perspectives and develop a more nuanced understanding of the International Studies discourse.",
+      "startingTime": "10:00 PM",
+      "closingTime": "3:00 PM",
+      "eventDate": "30/09/2024",
+      "eventMode": "Offline",
+      "location": "Rashtrapati Bhawan, President's Estate, New Delhi, Delhi 110004",
+      "coverImage": "https://images.hindustantimes.com/img/2022/09/25/1600x900/PTI09-24-2022-000256B-0_1664081241130_1664081241130_1664081258185_1664081258185.jpg",
+      "eventTags": ["MEA", "International Relations", "Goverment of India"],
+      "website": "https://ministryofexternalaffairs.gov/"
+    },
+    {
+      "title": "Workshop on Artificial Intelligence",
+      "host": "OpenAI",
+       "speakers": [
+          {"name": "Sam Altman", "position": "CEO of OpenAI", "profileImage": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG7o_MljCf-PcXSX8rm0HwZevXvPtDg1WfGq4Mj9xEBJQnVSHn"}
+       ],
+       "eventDetails": "Artificial Intelligence, It’s a behaviour of machines which is apparently intelligent. It is also known as study of intelligent agents: any device that perceives its environment and takes actions that maximize its chance of success at some goal. Learning & Problem solving are the capability of an artificially intelligent machines. The whole study related to Artificial intelligence concern about the beneficiary and safety features of the system associated. While developing an algorithm for AI the risk management is mandatory. With our AI workshop program one can easily get a kick start in this particular field of technology",
+        "startingTime": "6:00 PM",
+        "closingTime": "9:00 PM",
+        "eventDate": "13/08/2024",
+        "eventMode": "Online",
+        "entryFees": 80,
+        "coverImage": "https://www.androidauthority.com/wp-content/uploads/2022/11/twitter-1-scaled.jpg",
+        "eventTags": ["Artificial Intelligence", "OpenAI", "Chat GPT"],
+        "website": "https://openai.ai/"
+  }
+]
