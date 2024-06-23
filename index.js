@@ -1,10 +1,20 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const {MeetUp} = require('./models/meetups.model')
 const initializeDatabase  = require('./db/db.connection')
 
+// Cors configuration
+const corsOptions = {
+  origin: "*",
+  credentials: true
+}
+
 // JSON parsing middleware implemented
 app.use(express.json())
+
+// Cors middleware implementation
+app.use(cors(corsOptions))
 
 // Initial connection to DB
 initializeDatabase()
@@ -48,7 +58,7 @@ const readAllMeetUps = async () => {
   }
 }
 
-// GET method on "/" route to get all the meetups
+// GET method on "/meetups" route to get all the meetups
 app.get("/meetups", async (req, res) => {
   try {
     const allMeetUps = await readAllMeetUps()
