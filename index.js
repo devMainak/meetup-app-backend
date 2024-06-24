@@ -92,8 +92,8 @@ app.get("/meetups/:meetUpId", async (req, res) => {
   try {
     const meetUpById = await readMeetUpById(req.params.meetUpId)
     if (!meetUpById) {
-      res.status(400)
-      .json({error: "Failed to fetch meetup details."})
+      res.status(404)
+      .json({error: "Meetup details not found."})
     } else {
       res.status(200)
       .send(meetUpById)
